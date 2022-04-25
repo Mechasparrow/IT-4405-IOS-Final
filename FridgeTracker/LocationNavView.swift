@@ -22,7 +22,7 @@ struct LocationNavView: View {
                 ForEach (locations) { location in
                     NavigationLink(destination: GroceryLocationListView(locationToView: location, viewContext: viewContext))
                     {
-                        LocationListCellView(foodLocation: location)
+                        LocationListCellView(foodLocation: location, context: viewContext)
                     }
                 }
             }
