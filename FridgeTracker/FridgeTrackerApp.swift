@@ -13,7 +13,7 @@ struct FridgeTrackerApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LocationNavView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

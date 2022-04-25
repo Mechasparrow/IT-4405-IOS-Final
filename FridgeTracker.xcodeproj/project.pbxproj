@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E07045E828160882001D21C6 /* FridgeTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07045E728160882001D21C6 /* FridgeTrackerApp.swift */; };
-		E07045EA28160882001D21C6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07045E928160882001D21C6 /* ContentView.swift */; };
 		E07045EC28160884001D21C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07045EB28160884001D21C6 /* Assets.xcassets */; };
 		E07045EF28160884001D21C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07045EE28160884001D21C6 /* Preview Assets.xcassets */; };
 		E07045F128160884001D21C6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07045F028160884001D21C6 /* Persistence.swift */; };
@@ -16,6 +15,9 @@
 		E07045FE28160884001D21C6 /* FridgeTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07045FD28160884001D21C6 /* FridgeTrackerTests.swift */; };
 		E070460828160884001D21C6 /* FridgeTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070460728160884001D21C6 /* FridgeTrackerUITests.swift */; };
 		E070460A28160884001D21C6 /* FridgeTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070460928160884001D21C6 /* FridgeTrackerUITestsLaunchTests.swift */; };
+		E07046232816140D001D21C6 /* LocationNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07046222816140D001D21C6 /* LocationNavView.swift */; };
+		E070462528162AA7001D21C6 /* GroceryLocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070462428162AA7001D21C6 /* GroceryLocationListView.swift */; };
+		E070462728162CBC001D21C6 /* LocationListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E070462628162CBC001D21C6 /* LocationListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,6 @@
 /* Begin PBXFileReference section */
 		E07045E428160882001D21C6 /* FridgeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FridgeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E07045E728160882001D21C6 /* FridgeTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeTrackerApp.swift; sourceTree = "<group>"; };
-		E07045E928160882001D21C6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E07045EB28160884001D21C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E07045EE28160884001D21C6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E07045F028160884001D21C6 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +49,9 @@
 		E070460328160884001D21C6 /* FridgeTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FridgeTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E070460728160884001D21C6 /* FridgeTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeTrackerUITests.swift; sourceTree = "<group>"; };
 		E070460928160884001D21C6 /* FridgeTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E07046222816140D001D21C6 /* LocationNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNavView.swift; sourceTree = "<group>"; };
+		E070462428162AA7001D21C6 /* GroceryLocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryLocationListView.swift; sourceTree = "<group>"; };
+		E070462628162CBC001D21C6 /* LocationListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				E07045E728160882001D21C6 /* FridgeTrackerApp.swift */,
-				E07045E928160882001D21C6 /* ContentView.swift */,
+				E07046222816140D001D21C6 /* LocationNavView.swift */,
+				E070462428162AA7001D21C6 /* GroceryLocationListView.swift */,
+				E070462628162CBC001D21C6 /* LocationListCellView.swift */,
 				E07045EB28160884001D21C6 /* Assets.xcassets */,
 				E07045F028160884001D21C6 /* Persistence.swift */,
 				E07045F228160884001D21C6 /* FridgeTracker.xcdatamodeld */,
@@ -263,10 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E070462528162AA7001D21C6 /* GroceryLocationListView.swift in Sources */,
 				E07045F128160884001D21C6 /* Persistence.swift in Sources */,
-				E07045EA28160882001D21C6 /* ContentView.swift in Sources */,
 				E07045E828160882001D21C6 /* FridgeTrackerApp.swift in Sources */,
+				E07046232816140D001D21C6 /* LocationNavView.swift in Sources */,
 				E07045F428160884001D21C6 /* FridgeTracker.xcdatamodeld in Sources */,
+				E070462728162CBC001D21C6 /* LocationListCellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

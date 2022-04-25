@@ -11,9 +11,15 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
+    @FetchRequest(entity: FoodLocation.entity(), sortDescriptors: [])
+    var locations: FetchedResults<FoodLocation>
+    
     var body: some View {
         VStack {
-            Text("Hello Fridge")
+            Text("Locations below")
+            ForEach (locations) {location in
+                Text("\(location.name!)")
+            }
         }
     }
 }
